@@ -33,7 +33,7 @@ v1 === v2 // returns false
 
 useCallback returns a memoized function. It does not call the function but returns the function definition so you can call the function later. useCallback has a dependency array just like useEffect hook.
 
-// If you have a function in a dependency array of useEffect it's better for the function to use the useCallback function else the function will be called with every render leading to an endless rendering loop.
+If you have a function in a dependency array of useEffect it's better for the function to use the useCallback function else the function will be called with every render leading to an endless rendering loop.
 
 ```
  // const buildArray = () => [num1, num2];
